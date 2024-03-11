@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)https://sjce.ac.in/ -->
+<html lang="en-US" dir="ltr"><!-- Vuzzu theme --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Meta tags -->
+
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- Title -->
+<title>Sri Jayachamarajendra College of Engineering  </title>
+<!-- Pingbacks -->
+<link rel="pingback" href="https://sjce.ac.in/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- Favicon -->
+<link rel="shortcut icon" href="https://sjce.ac.in/">
+<!-- Starting wp_head -->
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Sri Jayachamarajendra College of Engineering » Feed" href="https://sjce.ac.in/feed/">
+<link rel="alternate" type="text/calendar" title="Sri Jayachamarajendra College of Engineering » iCal Feed" href="https://sjce.ac.in/events/?ical=1">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"wpemoji":"https:\/\/sjce.ac.in\/wp-includes\/js\/wp-emoji.js?ver=4.9.18","twemoji":"https:\/\/sjce.ac.in\/wp-includes\/js\/twemoji.js?ver=4.9.18"}};
+( function( window, document, settings ) {
+var src, ready, ii, tests;
+/*
+* Create a canvas element for testing native browser support
+* of emoji.
+*/
+var canvas = document.createElement( 'canvas' );
+var context = canvas.getContext && canvas.getContext( '2d' );
+/**
+* Check if two sets of Emoji characters render the same.
+*
+* @param set1 array Set of Emoji characters.
+* @param set2 array Set of Emoji characters.
+* @returns {boolean} True if the two sets render the same.
+*/
+function emojiSetsRenderIdentically( set1, set2 ) {
+var stringFromCharCode = String.fromCharCode;
+// Cleanup from previous test.
+context.clearRect( 0, 0, canvas.width, canvas.height );
+context.fillText( stringFromCharCode.apply( this, set1 ), 0, 0 );
+var rendered1 = canvas.toDataURL();
+// Cleanup from previous test.
+context.clearRect( 0, 0, canvas.width, canvas.height );
+context.fillText( stringFromCharCode.apply( this, set2 ), 0, 0 );
+var rendered2 = canvas.toDataURL();
+return rendered1 === rendered2;
+}
+/**
+* Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+* made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+*
+* @since 4.2.0
+*
+* @param type {String} Whether to test for support of "flag" or "emoji".
+* @return {Boolean} True if the browser can render emoji, false if it cannot.
+*/
+function browserSupportsEmoji( type ) {
+var isIdentical;
+if ( ! context || ! context.fillText ) {
+return false;
+}
+/*
+* Chrome on OS X added native emoji rendering in M41. Unfortunately,
+* it doesn't work when the font is bolder than 500 weight. So, we
+* check for bold rendering support to avoid invisible emoji in Chrome.
+*/
+context.textBaseline = 'top';
+context.font = '600 32px Arial';
+switch ( type ) {
+case 'flag':
+/*
+* Test for UN flag compatibility. This is the least supported of the letter locale flags,
+* so gives us an easy test for full support.
+*
+* To test for support, we try to render it, and compare the rendering to how it would look if
+* the browser doesn't render it correctly ([U] + [N]).
+*/
+isIdentical = emojiSetsRenderIdentically(
+[ 55356, 56826, 55356, 56819 ],
+[ 55356, 56826, 8203, 55356, 56819 ]
+);
+if ( isIdentical ) {
+return false;
+}
+/*
+* Test for English flag compatibility. England is a country in the United Kingdom, it
+* does not have a two letter locale code but rather an five letter sub-division code.
+*
+* To test for support, we try to render it, and compare the rendering to how it would look if
+* the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+*/
+isIdentical = emojiSetsRenderIdentically(
+[ 55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447 ],
+[ 55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447 ]
+);
+return ! isIdentical;
+case 'emoji':
+/*
+* She's the hero Emoji deserves, but not the one it needs right now.
+*
+* To test for support, try to render a new emoji (female superhero),
+* then compare it to how it would look if the browser doesn't render it correctly
+* (superhero + female sign).
+*/
+isIdentical = emojiSetsRenderIdentically(
+[55358, 56760, 9792, 65039],
+[55358, 56760, 8203, 9792, 65039]
+);
+return ! isIdentical;
+}
+return false;
+}
+function addScript( src ) {
+var script = document.createElement( 'script' );
+script.src = src;
+script.defer = script.type = 'text/javascript';
+document.getElementsByTagName( 'head' )[0].appendChild( script );
+}
+tests = Array( 'flag', 'emoji' );
+settings.supports = {
+everything: true,
+everythingExceptFlag: true
+};
+for( ii = 0; ii < tests.length; ii++ ) {
+settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+if ( 'flag' !== tests[ ii ] ) {
+settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
+}
+}
+settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+settings.DOMReady = false;
+settings.readyCallback = function() {
+settings.DOMReady = true;
+};
+if ( ! settings.supports.everything ) {
+ready = function() {
+settings.readyCallback();
+};
+if ( document.addEventListener ) {
+document.addEventListener( 'DOMContentLoaded', ready, false );
+window.addEventListener( 'load', ready, false );
+} else {
+window.attachEvent( 'onload', ready );
+document.attachEvent( 'onreadystatechange', function() {
+if ( 'complete' === document.readyState ) {
+settings.readyCallback();
+}
+} );
+}
+src = settings.source || {};
+if ( src.concatemoji ) {
+addScript( src.concatemoji );
+} else if ( src.wpemoji && src.twemoji ) {
+addScript( src.twemoji );
+addScript( src.wpemoji );
+}
+}
+} )( window, document, window._wpemojiSettings );
+</script><script src="./sjce_files/twemoji.js.download" type="text/javascript" defer=""></script><script src="./sjce_files/wp-emoji.js.download" type="text/javascript" defer=""></script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="pt-cv-public-style-css" href="./sjce_files/cv.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpsm_ac-sh-font-awesome-front-css" href="./sjce_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpsm_ac-sh_bootstrap-front-css" href="./sjce_files/bootstrap-front.css" type="text/css" media="all">
+<link rel="stylesheet" id="crellyslider.min-css" href="./sjce_files/crellyslider.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="default-icon-styles-css" href="./sjce_files/wordpress-svg-icon-plugin-style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="./sjce_files/dashicons.css" type="text/css" media="all">
+<link rel="stylesheet" id="to-top-css" href="./sjce_files/to-top-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpems-countdown-css-css" href="./sjce_files/jquery.countdown.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpems-owl-carousel-css-css" href="./sjce_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpems-magnific-popup-css-css" href="./sjce_files/magnific-popup.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpems-fronted-css-css" href="./sjce_files/events.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wptables-public-css" href="./sjce_files/wptables.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="grid-text-css" href="./sjce_files/text.css" type="text/css" media="all">
+<link rel="stylesheet" id="grid-reset-css" href="./sjce_files/reset.css" type="text/css" media="all">
+<link rel="stylesheet" id="grid-960-css" href="./sjce_files/960.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpe-style-css" href="./sjce_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="flexslider-css" href="./sjce_files/flexslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="superfish-css" href="./sjce_files/superfish.css" type="text/css" media="all">
+<link rel="stylesheet" id="lightbox-css" href="./sjce_files/lightbox.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-css" href="./sjce_files/jqueryui.css" type="text/css" media="all">
+<link rel="stylesheet" id="preset-css-css" href="./sjce_files/red.css" type="text/css" media="all">
+<link rel="stylesheet" id="responsive-css" href="./sjce_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="easy_table_style-css" href="./sjce_files/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-css" href="./sjce_files/elementor-icons.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="./sjce_files/font-awesome.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-animations-css" href="./sjce_files/animations.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="./sjce_files/frontend.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-global-css" href="./sjce_files/global.css" type="text/css" media="all">
+<link rel="stylesheet" id="msl-main-css" href="./sjce_files/masterslider.main.css" type="text/css" media="all">
+<link rel="stylesheet" id="tmm-css" href="./sjce_files/tmm_style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="./sjce_files/css" type="text/css" media="all">
+<script src="./sjce_files/hklwk.js.download" type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://sjce.ac.in/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script> -->
+<!-- <script type='text/javascript' src='https://sjce.ac.in/wp-includes/js/jquery/jquery-migrate.js?ver=1.4.1'></script> -->
+<!-- <script type='text/javascript' src='https://sjce.ac.in/wp-content/plugins/crelly-slider/js/jquery.crellyslider.min.js?ver=1.3.4'></script> -->
+<!-- <script type='text/javascript' src='https://sjce.ac.in/wp-content/plugins/itro-popup/scripts/itro-scripts.js?ver=4.9.18'></script> -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var to_top_options = {"scroll_offset":"100","icon_opacity":"50","style":"icon","icon_type":"dashicons-arrow-up-alt2","icon_color":"#000000","icon_bg_color":"#ff7f00","icon_size":"32","border_radius":"5","image":"https:\/\/sjce.ac.in\/wp-content\/plugins\/to-top\/admin\/images\/default.png","image_width":"65","image_alt":"","location":"bottom-right","margin_x":"20","margin_y":"20","show_on_admin":"0","enable_autohide":"1","autohide_time":"2","enable_hide_small_device":"0","small_device_max_width":"640","reset":"0"};
+/* ]]> */
+</script>
+<script src="./sjce_files/hklwk(1).js.download" type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://sjce.ac.in/wp-content/plugins/to-top/public/js/to-top-public.js?ver=1.8'></script> -->
+<!-- <script type='text/javascript' src='https://sjce.ac.in/wp-content/plugins/wptables/build/js/wptables.min.js?ver=1.3.9'></script> -->
+<link rel="https://api.w.org/" href="https://sjce.ac.in/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://sjce.ac.in/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://sjce.ac.in/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.9.18">
+<link rel="canonical" href="https://sjce.ac.in/">
+<link rel="shortlink" href="https://sjce.ac.in/">
+<link rel="alternate" type="application/json+oembed" href="https://sjce.ac.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsjce.ac.in%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://sjce.ac.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsjce.ac.in%2F&amp;format=xml">
+<style>.ms-parent-id-1 > .master-slider{ background:#000000; }</style>
+<script>var ms_grabbing_curosr = 'https://sjce.ac.in/wp-content/plugins/master-slider/public/assets/css/common/grabbing.cur', ms_grab_curosr = 'https://sjce.ac.in/wp-content/plugins/master-slider/public/assets/css/common/grab.cur';</script>
+<meta name="generator" content="MasterSlider 3.5.3 - Responsive Touch Image Slider | avt.li/msf">
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://sjce.ac.in"><link rel="https://theeventscalendar.com/" href="https://sjce.ac.in/wp-json/tribe/events/v1/">
+<style type="text/css">
+.main,.second { color: #fff !important; } .third { color: #565656 !important; }
+.slider { height: 330px !important; }
+.container { font-size : 13px !important; }  .container a { font-size : 13px !important; }  .container .post_block .block .info { font-size : 12px !important; }  .container h1 { font-size : 18px !important; }  .container h2 { font-size : 16px !important; }  .container h3 { font-size : 14px !important; }  .container h4 { font-size : 12px !important; }  .container h5 { font-size : 11px !important; }  .container h6 { font-size : 11px !important; } 
+</style>
+<meta name="onesignal" content="wordpress-plugin">
+<link rel="manifest" href="https://sjce.ac.in/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/manifest.json.php?gcm_sender_id=">
+<script src="./sjce_files/OneSignalSDK.js.download" async=""></script>    <script>
+window.OneSignal = window.OneSignal || [];
+OneSignal.push( function() {
+OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
+OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
+OneSignal.SERVICE_WORKER_PARAM = { scope: '/' };
+OneSignal.setDefaultNotificationUrl("https://sjce.ac.in");
+var oneSignal_options = {};
+window._oneSignalInitOptions = oneSignal_options;
+oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = 'bcd2bc89-c9db-472e-ac4a-3d4f2a29f8e1';
+oneSignal_options['autoRegister'] = false;
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['title'] = "Sri Jayachamarajendra College of Engineering";
+oneSignal_options['welcomeNotification']['message'] = "Thanks for Subscribing for Notifications";
+oneSignal_options['path'] = "https://sjce.ac.in/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
+oneSignal_options['safari_web_id'] = "web.onesignal.auto.44228ff7-6812-4ce7-8396-b26a8a4cb6f4";
+oneSignal_options['promptOptions'] = { };
+oneSignal_options['notifyButton'] = { };
+oneSignal_options['notifyButton']['enable'] = true;
+oneSignal_options['notifyButton']['position'] = 'bottom-left';
+oneSignal_options['notifyButton']['theme'] = 'default';
+oneSignal_options['notifyButton']['size'] = 'medium';
+oneSignal_options['notifyButton']['prenotify'] = true;
+oneSignal_options['notifyButton']['showCredit'] = true;
+oneSignal_options['notifyButton']['text'] = {};
+oneSignal_options['notifyButton']['text']['message.prenotify'] = 'Subscriber for notifications';
+OneSignal.init(window._oneSignalInitOptions);
+});
+function documentInitOneSignal() {
+var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+}
+if (document.readyState === 'complete') {
+documentInitOneSignal();
+}
+else {
+window.addEventListener("load", function(event){
+documentInitOneSignal();
+});
+}
+</script>
+<link rel="icon" href="https://sjce.ac.in/wp-content/uploads/2017/08/cropped-sjcelogo-32x32.png" sizes="32x32">
+<link rel="icon" href="https://sjce.ac.in/wp-content/uploads/2017/08/cropped-sjcelogo-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="https://sjce.ac.in/wp-content/uploads/2017/08/cropped-sjcelogo-180x180.png">
+<meta name="msapplication-TileImage" content="https://sjce.ac.in/wp-content/uploads/2017/08/cropped-sjcelogo-270x270.png">
+<style type="text/css" id="wp-custom-css">
+.button2 {
+border-radius: 4px;
+background:linear-gradient( to top right, rgba(255,87,34,1) 0%, rgba(251,140,0 ,1) 100%);
+box-shadow: 0px 10px 20px -8px rgba(0,0,0 ,.7);
+border: none;
+color: #fff;
+text-align: center;
+font-size: 14px;
+padding: 6px 10px;
+width: 220px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+.button2{
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+.button2:after {
+content: '»';
+position: absolute;
+opacity: 0;  
+top: 4px;
+right: -30px;
+transition: 0.5s;
+}
+.button2:hover{
+padding-right: 14px;
+padding-left:0px;
+}
+.button2:hover:after {
+opacity: 1;
+right: 40px;
+}
+.button3 {
+border-radius: 4px;
+background:linear-gradient( to top right, rgba(255,87,34,1) 0%, rgba(251,140,0 ,1) 100%);
+box-shadow: 0px 10px 20px -8px rgba(0,0,0 ,.7);
+border: none;
+color: #fff;
+text-align: center;
+font-size: 14px;
+padding: 6px 10px;
+width: 220px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+.button3{
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+.button3:after {
+content: '»';
+position: absolute;
+opacity: 0;  
+top: 4px;
+right: -30px;
+transition: 0.5s;
+}
+.button3:hover{
+padding-right: 14px;
+padding-left:0px;
+}
+.button3:hover:after {
+opacity: 1;
+right: 10px;
+}
+.button4 {
+border-radius: 4px;
+background:linear-gradient( to top right, rgba(255,87,34,1) 0%, rgba(251,140,0 ,1) 100%);
+box-shadow: 0px 10px 20px -8px rgba(0,0,0 ,.7);
+border: none;
+color: #fff;
+text-align: center;
+font-size: 14px;
+padding: 6px 10px;
+width: 220px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+.button4{
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+.button4:after {
+background:linear-gradient( to bottom right,rgba(63,81,181,1) 0%, rgba(171,71,188 ,1) 70%);
+position: absolute;
+opacity: 0;  
+top: 4px;
+right: -20px;
+transition: 0.5s;
+}
+.button4:hover{
+padding-right: 14px;
+padding-left:0px;
+background:linear-gradient( to bottom right,rgba(63,81,181,1) 0%, rgba(171,71,188 ,1) 70%);
+}
+.button4:hover:after {
+opacity: 1;
+right: 0px;
+background:linear-gradient( to bottom right,rgba(63,81,181,1) 0%, rgba(171,71,188 ,1) 70%);
+}
+.sidebar .widget.side_nav, .sidebar .widget.widget_categories, .sidebar .widget.hardcoded_contact{
+border: 2px solid #800000;
+border-radius: 5px;
+}
+.content .post .post-content{
+border: 2px solid #800000;
+border-radius: 5px;
+}
+.container .widget h1{
+background-color:#800000;
+color:#ffffff;
+background-image: url(https://sjce.ac.in/wp-content/plugins/shortcodes-ultimate/assets/images/styles/style-glass.png);
+background-position: 00 50%;
+}
+.content .grid_4 {
+width: 45%;
+border: 2px solid #800000;
+border-radius: 5px;
+}
+.content .feed .post a.title{
+font-weight:bolder;
+}
+.container a {
+font-size:14px !important;
+font-weight:bold;
+}
+.sidebar .widget.side_nav ul li a{
+color:#000;
+font-size:15px !important;
+font-weight:bolder;
+}
+.container a:hover{
+color:#000;
+}
+*{
+font-weight:bolder;
+font-size:15px;
+}
+.spacey{
+display:inline-block;
+margin-left:150px;
+}
+.content .feed .post .info span{
+color:#000;
+}
+.su-box-content{
+color:#000;
+}
+.container .slider img{
+border:1px solid;
+border-color:#800000;
+}
+.head_content .main_nav{
+background:linear-gradient( to top right, rgba(255,87,34,1) 0%, rgba(251,140,0 ,1) 100%);
+}
+.head_content .main_nav > ul > li{
+border-right:0px solid;
+}
+.sf-menu ul{
+background:linear-gradient( to top right, rgba(255,87,34,1) 0%, rgba(251,140,0 ,1) 100%);
+}
+.sf-menu ul li a{
+border-bottom:2px solid #000;
+}
+.container .slider img{
+max-width:99.7%
+}
+.head_content .main_nav > ul > li > a{
+font-size:13px;
+}
+.head_content .main_nav > ul > li.current-menu-item > a, .head_content .main_nav > ul > li:hover > a{
+color:#fff;
+}
+.head_content .main_nav > ul > li.current-menu-item, .head_content .main_nav > ul > li:hover{
+background:none;
+border-left:0px;
+}
+.widget.rounded_2.widget_vertical_recent_post_widget{
+background:#eedc85;
+}
+.head_content .mainmenu_mobile{
+background:linear-gradient( to top right, rgba(255,87,34,1) 0%, rgba(251,140,0 ,1) 100%);
+}
+.textvs{
+text-align:center;
+font-size:17px;
+color:black;
+-webkit-animation:colorchange 20s infinite alternate;
+}
+@-webkit-keyframes colorchange {
+0% {
+color: blue;
+}
+10% {
+color: #800000;
+}
+20% {
+color: #1abc9c;
+}
+30% {
+color: #d35400;
+}
+40% {
+color: blue;
+}
+50% {
+color: #34495e;
+}
+60% {
+color: blue;
+}
+70% {
+color: #2980b9;
+}
+80% {
+color: #ff7f00;
+}
+90% {
+color: #2980b9;
+}
+100% {
+color: pink;
+}
+}
+.widget.rounded_2.widget_text{
+border: 2px solid #800000;
+border-radius: 5px;
+background:#eedc85;
+}
+.content .feed h2{
+background-color:#800000;
+color:#ffffff;
+background-image: url(https://sjce.ac.in/wp-content/plugins/shortcodes-ultimate/assets/images/styles/style-glass.png);
+background-position: 00 50%;
+background-repeat: repeat-x;
+}
+li{
+text-align:center;
+}
+.tribe-events-list-widget .tribe-events-list-widget-events{
+text-align:justify;
+}
+.tree ul {
+margin:auto;
+position:relative;
+padding-top: 20px;
+justify-content:center;
+display:flex;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+}
+.tree li {
+float: left;
+text-align: center;
+list-style-type: none;
+position: relative;
+padding: 20px 5px 0 5px;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+}
+.tree li::before, .tree li::after{
+content: '';
+position: absolute; top: 0; right: 50%;
+border-top: 1px solid #ccc;
+width: 50%; height: 20px;
+}
+.tree li::after{
+right: auto; left: 50%;
+border-left: 1px solid #ccc;
+}
+.tree li:only-child::after, .tree li:only-child::before {
+display: none;
+}
+.tree li:only-child{ padding-top: 0;}
+.tree li:first-child::before, .tree li:last-child::after{
+border: 0 none;
+}
+.tree li:last-child::before{
+border-right: 1px solid #ccc;
+border-radius: 0 5px 0 0;
+-webkit-border-radius: 0 5px 0 0;
+-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+border-radius: 5px 0 0 0;
+-webkit-border-radius: 5px 0 0 0;
+-moz-border-radius: 5px 0 0 0;
+}
+.tree ul ul::before{
+content: '';
+position: absolute; top: 0; left: 50%;
+border-left: 1px solid #ccc;
+width: 0; height: 20px;
+}
+.tree li div{
+border: 1px solid #ccc;
+padding: 5px 10px;
+text-decoration: none;
+color: #000;
+font-family: Open Sans;
+font-size: 15px;
+display: inline-block;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+}
+.tree li div:hover, .tree li div:hover+ul li div {
+background:linear-gradient( to bottom right,rgba(63,81,181,1) 0%, rgba(171,71,188 ,1) 70%); color:#fff;
+border: 1px solid #800000;
+}
+.tree li div:hover+ul li::after, 
+.tree li div:hover+ul li::before, 
+.tree li div:hover+ul::before, 
+.tree li div:hover+ul ul::before{
+border-color:  #800000;
+}
+.content12 {
+font-size: small;
+width: auto;
+overflow: hidden;
+white-space: nowrap;
+color:#000;
+}
+.content12:hover{
+overflow: visible; 
+white-space: normal; 
+width: auto;
+background:linear-gradient( to bottom right,rgba(63,81,181,1) 0%, rgba(171,71,188 ,1) 70%); ;
+color: #fff;
+border: 1px solid #800000;
+}
+th, td, caption{
+font-weight:bold;
+}
+.textvs{
+padding-top: 10px;
+}
+</style>
+<!-- To Top Custom CSS --><style type="text/css">#to_top_scrollup {color: #000000;background-color: #ff7f00;}</style>
+<script src="./sjce_files/OneSignalPageSDKES6.js.download" async=""></script><link rel="stylesheet" href="./sjce_files/OneSignalSDKStyles.css"></head>
+<body class="home page-template page-template-template-home page-template-template-home-php page page-id-8 _masterslider _ms_version_3.5.3 tribe-js elementor-default elementor-page elementor-page-8 su-other-shortcodes-loaded">
+<header>
+<div class="header">
+<hr>
+<div class="head_content container_12">
+<div class="head_social grid_6 alignleft">
+<span class="alignleft"> Social </span>
+<div class="box alignleft">
+<a href="https://www.facebook.com/SJCE.Mysore.India" class="fb" target="_blank"> </a>
+</div>
+<div class="box alignleft">
+<a href="https://www.twitter.com/@jcedboard" class="tw" target="_blank"> </a>
+</div>
+<div class="box alignleft">
+<a href="https://sjce.ac.in/youtube.com/jcedboard" class="yt" target="_blank"> </a>
+</div>
+</div>
+<div class="clear"></div>	<div class="grid_12">
+<div class="head_logo grid_5 ">
+<a href="https://sjce.ac.in/" class="alignleft">
+<img src="./sjce_files/SJCE_Final-e1440437978629.png" class="alignleft">
+</a>
+<h1 class="alignleft"> <div class="center"> JSS Mahavidyapeetha</div>Sri Jayachamarajendra College of Engineering </h1><br>
+<h4 class="alignleft"> A Commitment to Technical Education </h4>
+<div class="clear"></div>
+</div>
+</div>
+<!-- TOPNAV MOBILE BEGIN -->
+<div class="topmenu_mobile"> Navigation
+<select style="display:none" class="topmenu_mobile" onchange="window.location.href = &#39;&#39;+ $v(this).val() + &#39;&#39;;">
+<option> - Select - </option>
+</select>
+</div>
+<!-- TOPNAV MOBILE END -->
+<!-- HEADER MAIN NAVIGATION BEGIN -->
+<nav>
+<div class="clear"></div>
+<a href="https://sjce.ac.in/#" class="mainmenu_mobile" style="display:none" onclick="$v(this).next().slideToggle();return false;"> 
+<span> Main navigation </span>
+<span class="alignright"> </span>
+</a>
+<div class="main_nav grid_12 sf-js-enabled" id="main_menu">
+<ul class="sf-menu" id="main_menu"><li id="menu-item-1347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-1347"><a href="https://sjce.ac.in/">Home</a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-54"><a href="https://sjce.ac.in/institute/">About</a>
+<ul class="sub-menu" style="display: none; visibility: hidden;">
+<li id="menu-item-270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270"><a href="https://sjce.ac.in/institute/about-01/">History</a></li>
+<li id="menu-item-271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-271"><a href="https://sjce.ac.in/institute/about-02/">Vision and Mission</a></li>
+<li id="menu-item-1278" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1278"><a href="https://sjce.ac.in/institute/about-05/">Governing Body</a></li>
+<li id="menu-item-965" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-965"><a href="https://sjce.ac.in/institute/message-from-principal/">Words of Wisdom</a></li>
+<li id="menu-item-275" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-275"><a href="https://sjce.ac.in/institute/about-06/">Mandatory Disclosure</a></li>
+<li id="menu-item-958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-958"><a href="http://jssonline.org/">About JSS</a></li>
+<li id="menu-item-2577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2577"><a href="https://sjce.ac.in/contact-us/">Contact Us</a></li>
+</ul>
+</li>
+<li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-55"><a href="https://sjce.ac.in/academics/">Academics</a>
+<ul class="sub-menu" style="display: none; visibility: hidden;">
+<li id="menu-item-590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-590"><a href="https://sjce.ac.in/academics/under-graduate-programme-b-e/">Undergraduate Programme (U.G)</a></li>
+<li id="menu-item-591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-591"><a href="https://sjce.ac.in/academics/post-graduate-courses-research-programme/">Postgraduate &amp; Research Programmes (P.G)</a></li>
+<li id="menu-item-592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-592"><a href="https://sjce.ac.in/dept/">Departments</a></li>
+<li id="menu-item-559" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-559"><a href="https://sjce.ac.in/academics/calendar-of-events/">Calendar of Events</a></li>
+<li id="menu-item-594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-594"><a href="https://sjce.ac.in/academics/library-and-information-centre/">Library and Information Centre</a></li>
+<li id="menu-item-595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-595"><a href="https://sjce.ac.in/academics/academic-regulations/">Academic Regulations</a></li>
+</ul>
+</li>
+<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-56"><a href="https://sjce.ac.in/campus-life/">Campus Life</a>
+<ul class="sub-menu" style="display: none; visibility: hidden;">
+<li id="menu-item-869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-869"><a href="https://sjce.ac.in/campus-life/the-campus/">The Campus</a></li>
+<li id="menu-item-322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-322"><a href="https://sjce.ac.in/campus-life/essential-services/">Essential Services</a></li>
+<li id="menu-item-323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-323"><a href="https://sjce.ac.in/campus-life/student-clubs/">Student Clubs</a></li>
+<li id="menu-item-324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-324"><a href="https://sjce.ac.in/campus-life/sports/">Sports</a></li>
+<li id="menu-item-325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-325"><a href="https://sjce.ac.in/campus-life/jayciana/">Fests</a></li>
+<li id="menu-item-1785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1785"><a href="https://sjce.ac.in/student-welfare/">Student Welfare</a></li>
+<li id="menu-item-1353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1353"><a href="https://sjce.ac.in/campus-life/hostels/">Hostels</a></li>
+</ul>
+</li>
+<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-96"><a href="https://sjce.ac.in/research/research-01/">Research</a>
+<ul class="sub-menu" style="display: none; visibility: hidden;">
+<li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="https://sjce.ac.in/research/research-02/">Industry Institution Partnership Cell</a></li>
+<li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="https://sjce.ac.in/research/research-03/">Projects &amp; Grants</a></li>
+<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://sjce.ac.in/research/research-06/">University Relations</a></li>
+</ul>
+</li>
+<li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-58"><a href="https://sjce.ac.in/placements/">Training&amp;Placement</a>
+<ul class="sub-menu" style="display: none; visibility: hidden;">
+<li id="menu-item-916" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-916"><a href="https://sjce.ac.in/placements/our-recruiters/">Our Recruiters</a></li>
+<li id="menu-item-1049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1049"><a href="https://sjce.ac.in/placements/placement-achievements/">Placement Achievements</a></li>
+<li id="menu-item-99" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="https://sjce.ac.in/placements/research-04/">SJCE – STEP</a></li>
+<li id="menu-item-5828" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5828"><a href="https://sjce.ac.in/placements/contact-details/">Contact Details</a></li>
+</ul>
+</li>
+<li id="menu-item-2571" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2571"><a href="https://sjce.ac.in/teqip/">TEQIP</a></li>
+<li id="menu-item-3491" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3491"><a href="https://sjce.ac.in/nirf-2022-23-2/">NIRF</a></li>
+<li id="menu-item-7673" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7673"><a href="https://sjce.ac.in/accreditation/">ACCREDITATION Status</a></li>
+<li id="menu-item-8700" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8700"><a href="https://sjce.ac.in/institution-budget/">Institution Budget</a></li>
+<li id="menu-item-8154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8154"><a href="https://sjce.ac.in/admission-open-for-the-ug-and-pg-program-for-the-year-2021/"><marquee direction="left">UG &amp; PG programs offered</marquee></a></li>
+<li id="menu-item-11753" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11753"><a href="https://sjce.ac.in/aicte-feedback/">AICTE FEEDBACK</a></li>
+<li id="menu-item-11760" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11760"><a href="https://docs.google.com/forms/d/18CyYObfIQGJpRC8KqFPi8eASdyAC6k9bzi9NG7HQhlE/">GRIEVANCE REDRESSAL</a></li>
+</ul>
+<form method="get" role="search" id="searchform" action="https://sjce.ac.in/">
+<input type="text" name="s" id="s" class="search" value="" placeholder="search now...">
+</form>
+<div class="clear"></div>
+</div>
+</nav>
+<!-- HEADER MAIN NAVIGATION END -->
+</div>
+</div>
+</header>
+<!-- MOBILE SEARCH -->
+<form method="get" role="search" id="searchform" class="mobile_search" action="https://sjce.ac.in/" style="display:none">
+<input type="text" name="s" id="s" class="rounded_1" value="" placeholder="search now...">
+</form>
+<!-- MOBILE SEARCH END -->
+<div class="container container_12">
+<aside>
+<div class="sidebar grid_4 alignleft">
+<div class="widget rounded_2 widget_text"><h1>Vision and Mission</h1>			<div class="textwidget"><p class="textvs">VISION</p>
+<p>&nbsp;</p>
+<p dir="ltr" style="text-align: justify;">“Be an international leader in engineering education, research and application of knowledge to benefit society globally”.</p>
+<p>&nbsp;</p>
+<p class="textvs">MISSION</p>
+<p>&nbsp;</p>
+<p dir="ltr" style="text-align: justify;">• “To synergistically develop high-quality manpower and continue to stay competitive in tomorrow’s world”.</p>
+<p dir="ltr" style="text-align: justify;">• “To foster and maintain mutually beneficial partnerships with our alumni, industry, state and central governments through public services assistance and collaborative research”.</p>
+<p dir="ltr" style="text-align: justify;">• “To create empowered individuals with sense of identity”.</p>
+</div>
+</div><div class="widget rounded_2 widget_vertical_recent_post_widget"><h1>Campus Bulletin</h1><div style="height: 240px;" class="vsrp_wrapper vsrp_id_0" data-delay-seconds="3" data-speed="2" data-direction="1"><div class="vsrp_div vsrp_id_0vsrp_remove" style="height: 40px; top: -44.928px;"><a href="https://sjce.ac.in/campus-bulletin/online-application-form-under-aicte-pragati-saksham-and-swanath-scholarship-schemes-2023-24-through-national-scholarship-portal-nsp/">Online Application Form under AICTE...</a></div><div class="vsrp_div" style="height: 40px; top: -44.928px;"><a href="https://sjce.ac.in/campus-bulletin/revised-time-table-1st-semester-b-e-2023-24/">Revised Time Table - 1st semester B...</a></div><div class="vsrp_div" style="height: 40px; top: -44.928px;"><a href="https://sjce.ac.in/campus-bulletin/student-scholarship-portal-1st-year-ug-courses/">Student Scholarship Portal -- 1st y...</a></div><div class="vsrp_div" style="height: 40px; top: -44.928px;"><a href="https://sjce.ac.in/campus-bulletin/second-internal-test-time-table-1st-semester-b-e-4-to-6-january-2024/">Second Internal Test Time Table - 1...</a></div><div class="vsrp_div" style="height: 40px; top: -44.928px;"><a href="https://sjce.ac.in/campus-bulletin/change-of-branch-for-the-academic-year-2023-24/">change of branch for the academic y...</a></div><div class="vsrp_div" style="height: 40px; top: -44.928px;"><a href="https://sjce.ac.in/campus-bulletin/time-table-for-1st-internals-1st-semester-b-e-16-to-18-november-2023/">Time Table for 1st internals - 1st ...</a></div><div class="vsrp_div" style="height: 40px; top: -44.928px;"><a href="https://sjce.ac.in/campus-bulletin/3-days-workshop-on-industrial-automation-using-plc-and-scada/">3 days workshop on Industrial Autom...</a></div><div class="vsrp_div" style="height: 40px; top: -44.928px;"><a href="https://sjce.ac.in/campus-bulletin/first-year-revised-time-table/">First year revised Time Table</a></div><div class="vsrp_div" style="height: 40px; top: -44.928px;"><a href="https://sjce.ac.in/campus-bulletin/online-application-form-under-aicte-pragati-saksham-and-swanath-scholarship-schemes-2023-24-through-national-scholarship-portal-nsp/">Online Application Form under AICTE...</a></div></div></div><div class="widget rounded_2 side_nav"><h1>Quick Links</h1><ul><li class="parent"> <a href="https://sjce.ac.in/placements/"> Placements </a> </li><li class="parent"> <a href="https://sjce.ac.in/campus-life/scholarships/"> Scholarships </a> </li><li class="parent"> <a href="https://sjce.ac.in/academics/pace/"> PACE </a> </li><li class="parent"> <a href="https://www.ieeesjce.com/"> IEEE-SJCE </a> </li><li class="parent"> <a href="https://sjce.ac.in/placements/research-04/"> SJCE – STEP </a> </li><li class="parent"> <a href="http://sjcealumni.org/"> SJCE Alumni </a> </li><li class="parent"> <a href="https://sjce.ac.in/teqip/"> TEQIP </a> </li><li class="parent"> <a href="http://jcedboard.org/"> The SJCE Editorial Board </a> </li><li class="parent"> <a href="http://gmail.com/"> Faculty Login </a> </li><li class="parent"> <a href="https://sjce.ac.in/uncategorized/e-yantra/"> e-Yantra </a> </li></ul><div class="clear"></div></div><div class="widget rounded_2 infolink">        <a href="http://sjce.ac.in/campus-life/the-campus">
+<div class="icon alignleft">
+<img src="./sjce_files/icon-campus.png">
+</div>
+<h1> Campus </h1>
+<div class="description"> View our campus </div>
+</a>
+</div><div class="widget rounded_2 infolink">        <a href="https://sjce.ac.in/result-n1.html">
+<div class="icon alignleft">
+<img src="./sjce_files/icon-scholarship.png">
+</div>
+<h1> Results  </h1>
+<div class="description"> Provisional Results of VIII Semester May 2019  SEE Announced </div>
+</a>
+</div><div class="widget rounded_2 infolink">        <a href="http://sjce.ac.in/results-repeaters/">
+<div class="icon alignleft">
+<img src="./sjce_files/icon-scholarship.png">
+</div>
+<h1> Repeaters Result </h1>
+<div class="description">  </div>
+</a>
+</div>
+</div>
+</aside>
+<!-- BEGIN CONTENT  -->
+<div class="content alignleft">
+<!-- BEGIN SLIDER  -->
+<div class="slider grid_8">
+<div class="sliding">
+<ul class="slides">
+<li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; display: list-item;">
+<a href="https://sjce.ac.in/home-slider/upload-1/">
+<img src="./sjce_files/HS1-630x330.jpg" class="rounded_2">
+</a>
+<div class="hidden caption-title"><a href="https://sjce.ac.in/home-slider/upload-1/">Slide1</a></div>
+<div class="hidden caption-text">Welcome to SRI JAYACHAMARAJENDRA COLLEGE OF ENGINEERING</div>
+</li>
+<li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class="">
+<a href="https://sjce.ac.in/home-slider/upload-2/">
+<img src="./sjce_files/bk3-1024x491-630x330.jpg" class="rounded_2">
+</a>
+<div class="hidden caption-title"><a href="https://sjce.ac.in/home-slider/upload-2/">Slide2</a></div>
+<div class="hidden caption-text">Students take pledge on Swactha Abhiyan</div>
+</li>
+<li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class="">
+<a href="https://sjce.ac.in/home-slider/650/">
+<img src="./sjce_files/jayciana1-630x330-1-630x330.jpg" class="rounded_2">
+</a>
+<div class="hidden caption-title"><a href="https://sjce.ac.in/home-slider/650/">Slide3</a></div>
+<div class="hidden caption-text">Jayciana – The annual cultural festival of the college is one of the biggest college fests of the state – featuring artists like Shankar Mahadven</div>
+</li>
+</ul>
+<div class="caption rounded_2">
+<div class="caption-content alignleft">
+<h1 style="display: block;"><a href="https://sjce.ac.in/home-slider/upload-1/">Slide1</a></h1>
+<p style="display: block;">Welcome to SRI JAYACHAMARAJENDRA COLLEGE OF ENGINEERING</p>
+</div>
+<div class="arrows alignright">
+<a href="https://sjce.ac.in/#" class="alignleft rounded_2 last" id="prev"> </a>
+<hr>
+<a href="https://sjce.ac.in/#" class="alignleft rounded_2 more" id="next"> </a>
+</div>
+</div>
+</div>
+</div>
+<!-- END SLIDER  -->
+<div class="feed grid_4 rounded_2">
+<h2 class="title"> News </h2>
+<div class="post ">
+<div class="info">
+<span class="date alignleft"> 26.11.2020 - 4:25 PM </span>
+<span class="comments alignright">  </span>
+<a href="https://sjce.ac.in/news-section/mou-between-sjce-jss-stu-and-australia-india-water-centeraiwc/" class="alignleft title"> MoU between SJCE, JSS STU and Australia – India Water Center(AIWC)</a>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post ">
+<div class="info">
+<span class="date alignleft"> 18.11.2020 - 7:52 PM </span>
+<span class="comments alignright">  </span>
+<a href="https://sjce.ac.in/news-section/mou-between-sjce-jss-stu-and-national-highway-authority-of-india-nhai/" class="alignleft title"> MoU between SJCE, JSS STU and National Highway Authority of India (NHAI)</a>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post ">
+<div class="info">
+<span class="date alignleft"> 16.10.2020 - 7:17 PM </span>
+<span class="comments alignright">  </span>
+<a href="https://sjce.ac.in/news-section/%e0%b2%b8%e0%b2%82%e0%b2%95%e0%b3%87%e0%b2%a4-%e0%b2%b5%e0%b3%8d%e0%b2%af%e0%b2%b5%e0%b2%b8%e0%b3%8d%e0%b2%a5%e0%b3%86-%e0%b2%ae%e0%b2%a4%e0%b3%8d%e0%b2%a4%e0%b3%81-%e0%b2%a8%e0%b2%bf%e0%b2%af/" class="alignleft title"> ‘ಸಂಕೇತ, ವ್ಯವಸ್ಥೆ ಮತ್ತು ನಿಯಂತ್ರಣ’ (Signals, Systems and Control)</a>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="home-bottom widget grid_4 rounded_2 widget_text"><h1>Words of Wisdom</h1>			<div class="textwidget"><div class="su-accordion"><div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed"><div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Swamiji's Message</div><div class="su-spoiler-content su-clearfix"><p></p>
+<p style="text-align: justify;">Sri Jayachamarajendra College of Engineering (SJCE) has an impressive history of growth &amp; development and contribution to society. Sri Suttur Math a traditional socio-religious organization more than 1050 years old has been involved in traditional education in India for a long time. More that 60 years ago, the organization decided to start formal education system under JSS Mahavidyapeetha to cater to formal education with the motto of Education for all. The main emphasis in the early period was in the rural sector where a large number of schools were started. However, the founder President of MVP His Holiness Dr.Jagadguru Sri Sri. Rajendra Mahaswami had a vision of expanding the service of education to its full potential under MVP. Hence the vertical growth was envisaged and higher education institutions in different areas were started, starting with Science and Commerce Institution.</p>
+<p style="text-align: justify;">SJCE was founded in the year 1963. With continued effort it grew into one of the top most Technical Institutions in the country within a short period of 10-15 years. Today, MVP has more than 300 institutions, and technical education division with SJCE as its flagship institution, has grown into as a very good example of technical education with the motto of “commitment to technical education”.</p>
+<p style="text-align: justify;">SJCE has pioneered a good number of new programmes relevant to the country’s growth during 1970 and 1980 period namely, Instrumentation Technology, Masters in Engineering Management, Bio-Technology, Polymer Science &amp; Technology etc.</p>
+<p style="text-align: justify;">SJCE has created a network of relationship within and outside the country with a large number of Technical Institutions in US, UK, France, Russia, Malaysia etc. This brought in exchange of students, joint research, exchange of faculty which help in the growth of institution into a centre of excellence.</p>
+<p style="text-align: justify;">A unique feature of SJCE is that it becomes the focal point for further growth. Our outreach programmes consist of entrepreneurship development through Science &amp; Technology Entrepreneurs Park, an organization for consultancy in which the institution involved in design of training for the entire Karnataka under World Bank scheme.</p>
+<p style="text-align: justify;">SJCE has also been responsible to take education to the levels of polytechnics, Industrial Training Institutes and outreach skill training programmes through RUDSETI etc. Each polytechnic has different concept – one of them is having CO-OP scheme – working closely with the industry, other one is a polytechnic for differently abled, only on of this kind in the country and the other is polytechnic for women, started at a time when professional education was not easily accessible to women.</p>
+<p style="text-align: justify;">In order to consider our efforts in different areas of Science, Commerce, law, Medical, Pharmacy etc., we have now got a research centre called JSS Research Foundation.</p>
+<p style="text-align: justify;">It is just now establishing JSS University of Science &amp; Technology at SJCE<br>
+Scenery of technical education all over the world is changing and the normal disciplines are giving way for new disciplines based on the growth of technology and economy. It is the endeavor that institution keep pace with the changes and steer SJCE in this direction of growth.</p>
+<p style="text-align: justify;"></p></div></div><p></p>
+<p></p><div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed"><div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Principal's Message</div><div class="su-spoiler-content su-clearfix"><p></p>
+<p><a href="https://sjce.ac.in/wp-content/uploads/2018/01/c2.jpg"><img class="alignnone wp-image-14160" src="./sjce_files/387-250x250.jpg" alt="" width="134" height="134"></a></p>
+<p><strong>Dr. C. Nataraju </strong></p>
+<p><strong>Principal (I/C)</strong></p>
+<p style="text-align: justify;">Sri Jayachamarajendra College of Engineering (SJCE) has an excellent track record of placing the young graduates to Industries, Research and Development Labs besides Higher Education within and outside the country. It has a strong alumni base of over 30000 and has earned distinction of being an institution par excellence during its journey spread across over 5 decades.</p>
+<p style="text-align: justify;">SJCE would want to remain as a global leader in the technical education space by adapting to the changes at national and global level. This is realized through the implementation of the Outcome Based Education (OBE) using modern teaching learning processes such as practical based learning, project based learning and use of national resources such as NPTEL and SWAYAM portals. SJCE opened up its doors for the alumni to contribute their knowledge in identifying critical thrust areas and also help in capacity building of our faculty. The faculty members have been on a constant improvement to improve their knowledge to become a globally competitive faculty. The Institution is funded by TEQIP Phase-III which provides many possibilities for empowering students and faculty besides the improving the infrastructure. It gives me immense pleasure to state that SJCE is the only Institution in the State of Karnataka which has been awarded highest number of approvals under MHRD’s Global Initiative of Academic Networks (GIAN) programme. SJCE has so far conducted 16 programmes. The Technical Education in 21st Century needs full term cooperation with the industry and hence industry linked programmes will create more stability. SJCE has been establishing programmes based on the requirements of the industry. Research is an integral part of every faculty and adequate financial support is available to enhance the quality and quantum of research in our institution. Having been elevated to the university level, SJCE is well poised towards realizing its Vision and Mission through structured implementation of OBE.</p>
+<p></p></div></div><br>
+</div>
+</div>
+</div><div class="widget_text home-bottom widget grid_4 rounded_2 widget_custom_html"><div class="textwidget custom-html-widget"><center><p id="para3">India Standard Time</p>
+<p id="para1">3:02:41 PM</p>
+<p id="para2">Friday, 23 February  2024 </p>
+</center>
+<script>
+function formatAMPM() {
+var d = new Date(),
+seconds = d.getSeconds().toString().length == 1 ? '0'+d.getSeconds() : d.getSeconds(),
+minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+ampm = d.getHours() >= 12 ? 'PM' : 'AM',
+months = ['January','February','March','April','May','June','July','August','September','October','November','December'],
+days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var hours1=hours;
+if (hours1>12){
+hours=hours1-12;
+}
+ampa= seconds_with_leading_zeros(d);
+document.getElementById('para3').innerHTML = ampa;
+document.getElementById('para1').innerHTML = hours+':'+minutes+':'+seconds+' '+ampm;
+document.getElementById('para2').innerHTML = days[d.getDay()]+', '+d.getDate()+' '+months[d.getMonth()]+' '+' '+d.getFullYear()+' ';
+}
+function seconds_with_leading_zeros(dt) 
+{ 
+return /\((.*)\)/.exec(new Date().toString())[1];
+}
+setInterval(formatAMPM, 500);
+</script></div></div><div class="home-bottom widget grid_4 rounded_2 Dtw_Clock_Widget">					
+<style>
+.dt_clocks{
+list-style:none;
+margin:0;
+color:#000;
+}
+.dt_clocks li
+{
+/* vertical */
+padding:2px;				
+}
+.digits
+{
+font-size:18px;
+}
+.wid_title_color{
+color:Time;
+}
+</style>
+<script>
+var moment='';
+function DisplayTime(span_id,timezone)
+{
+if(moment !== null && typeof moment !== 'undefined' && moment !== undefined && moment != '' && moment.tz){
+id=span_id.split("_");
+var now=moment.tz(timezone).format("dddd, DD-MMMM-YYYY");
+var ulzero='y';
+var weekday="1";
+//alert(now);
+var time=null;
+time=moment.tz(timezone).format("hh:mm:ss A");
+//dnt=now.split(new RegExp('[-+T]','g'));
+if(ulzero == 'n'){
+var weekdayStr='';
+var dateStr='';
+if(parseInt(weekday) == 1){
+var array = now.split(",");
+weekdayStr=array[0];
+dateStr=array[1];
+} else {
+dateStr=now;
+}
+var dateArray=dateStr.split("-");
+if(!isNaN(dateArray[0])){
+dateArray[0]=Number(dateArray[0]).toString();
+}
+if(!isNaN(dateArray[1])){
+dateArray[1]=Number(dateArray[1]).toString();
+}
+if(!isNaN(dateArray[2])){
+dateArray[2]=Number(dateArray[2]).toString();
+}
+if(weekdayStr == ''){
+now=dateArray[0]+'-'+dateArray[1]+'-'+dateArray[2];	
+} else {
+now=weekdayStr+', '+dateArray[0]+'-'+dateArray[1]+'-'+dateArray[2];		
+}
+}
+dnt=now.replace(/-/," ");
+dnt=dnt.replace(/-/," ");
+//console.log(dnt);
+document.getElementById(span_id).innerHTML=time;
+document.getElementById("date_"+id[1]).innerHTML=dnt;
+}
+}
+</script>
+<ul class="dt_clocks">
+<!------------clocks-------->
+<li><div id="dt_clock_1">
+<div>Greenwich Mean Time <!--top--></div>
+<span id="clock_1" class="digits">09:32:41 AM</span>
+<div class="dt_date" id="date_1">Friday, 23 February 2024</div>
+<script>
+var t1 = setInterval(function(){DisplayTime('clock_1','Europe/Isle_of_Man')},500);
+</script>
+</div></li>	
+<li><div id="dt_clock_2">
+<div>Eastern TIme <!--top--></div>
+<span id="clock_2" class="digits">04:32:41 AM</span>
+<div class="dt_date" id="date_2">Friday, 23 February 2024</div>
+<script>
+var t1 = setInterval(function(){DisplayTime('clock_2','America/New_York')},500);
+</script>
+</div></li>	
+<!------------clocks--------> 
+</ul>			
+</div>		
+</div>
+<!-- END CONTENT  -->
+</div>
+	<footer>
+<div class="footer">
+<div class="footer_columns">
+<div class="container_12">
+<div class="grid_12"><div class="widget rounded_2 contact"><h1>Sri Jayachamarajendra College of Engineering</h1>
+<ul> 
+<li style="padding-left:0" class="long"> <span class="address alignleft"></span> Sri Jayachamarajendra College of Engineering, JSS TI Campus, Manasagangothri, Mysuru 570006 </li><li class="phone">0821- 2548285, 2548286, 2548287</li><li class="email">principal@sjce.ac.in</li>        </ul>
+</div></div>
+</div>
+</div>
+<!-- FOOTER NAVIGATION BEGIN -->
+<!-- FOOTER NAVIGATION BEGIN -->
+<div class="footer_copyright">
+<div class="container_12">
+<div class="grid_12">
+<!-- <span class="alignleft"> */	</span> -->
+<span class="alignleft"> © SJCE Mysuru, 2019 </span>
+<span class="alignright"> All rights reserved  </span>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<style>
+/* POP-UP */
+#age_button_area
+{
+padding-top:10px;
+position: relative;
+width: 100%;
+bottom: 5px;
+padding-top:5px;
+}
+#ageEnterButton
+{
+border-color:;
+background:;
+color: ;
+}
+#ageLeaveButton
+{
+border-color:;
+background:;
+color: ;
+}
+#popup_content
+{
+overflow-y:hidden;    	overflow-x: auto;
+height: 100%;
+width:100%;
+}
+#itro_popup
+{
+visibility: hidden;
+opacity: 0;
+position: fixed;
+background-image: ;
+background-repeat: no-repeat;
+background-position: center center;
+margin: 0 auto;
+left:1px;
+right:1px;
+z-index: 2147483647 !important;
+padding:2px !important;	        	border-radius: 8px;
+border-width: 3px;
+width: 1300px;
+height: auto;
+background-color: #FFFFFF;
+}
+#close_cross
+{
+cursor:pointer; 
+width:20px; 
+position:absolute; 
+top:-22px; 
+right:-22px;
+}
+#popup_countdown 
+{
+color: ;
+width: 100%;
+padding-top: 0px ;
+padding-bottom:0px ;
+background-color: ;
+height: 0px ;
+overflow: hidden;
+position:absolute;
+bottom:0px;
+left:0px;
+border-bottom-left:8px;
+border-bottom-right:8px;
+}
+#itro_opaco{
+display: none;
+position:fixed;
+background-color:  #8A8A8A;
+font-size: 10px;
+font-family: Verdana;
+top: 100px;    
+width: 100%;
+height: 100%;
+z-index: 2147483646 !important;
+left: 0px ;
+right: 0px;
+top: 0px;
+bottom: 0px;
+opacity: 1.00 ;
+filter:alpha(opacity = 100); /* For IE8 and earlier */
+}
+/* label under the popup used to close it for mobile devices */
+#ipp_mobile_close_tab{
+display: none;
+border:none;
+position: absolute;
+padding: 5px;
+width: 80px;
+text-align: center;
+left: 1px;
+right: 1px;
+margin: auto;
+background-color: white        }
+#ipp_mobile_close_txt{
+font-weight: bold;
+cursor: pointer;
+}
+/* RESPONSIVE CSS */
+@media screen and (max-width: 780px)
+{
+#itro_popup{
+max-width: 470px;
+}
+#close_cross{
+display: none;
+}
+#ipp_mobile_close_tab{
+display: block;
+}
+}
+@media screen and (max-width: 480px){
+#itro_popup{
+max-width: 300px
+}
+}
+</style>
+<div id="itro_popup" style="top: 297px; opacity: 1; visibility: visible; display: none;">
+<div id="popup_countdown" align="center">This popup will close in:<b id="timer">1</b></div><img id="close_cross" src="./sjce_files/close-icon.png" alt="CLOSE" title="CLOSE" onclick="itro_exit_anim();">		
+<div id="ipp_mobile_close_tab">
+<span id="ipp_mobile_close_txt" onclick="itro_exit_anim();" style="color: rgb(255, 255, 255);">CLOSE</span>
+</div> 
+</div>
+<div id="itro_opaco" onclick="itro_exit_anim();" style="display: none;"></div>
+<script type="text/javascript">
+/* init var */
+itro_cookie_expiration = 5;
+itro_is_preview = false;/* pass true if is the preview page. used for cookie control via js due W3 total cache or similar */
+auto_margin = "yes";
+/* invert the color of the mobile close tab label text */
+jQuery('#ipp_mobile_close_txt').css({color: itro_invert_color(itro_rgb2hex(jQuery('#itro_popup').css('border-bottom-color'))) });
+itro_age_restriction = false;				document.onkeydown = function(event) 
+{
+event = event || window.event;
+var key = event.keyCode;
+if(key==27)
+{
+jQuery("#itro_popup").fadeOut(function() {jQuery("#itro_opaco").fadeOut();});
+} 
+}; 				itro_enter_anim(auto_margin);
+var popTime=7;
+interval_id = setInterval(function(){popTimer();},1000); /* the countdown  */
+</script>
+<span id="to_top_scrollup" class="dashicons dashicons-arrow-up-alt2" style="opacity: 0;"><span class="screen-reader-text">Scroll Up</span></span>		<script>
+( function ( body ) {
+'use strict';
+body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+} )( document.body );
+</script>
+<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};var tribe_system_info = {"sysinfo_optin_nonce":"d6ee182928","clipboard_btn_text":"Copy to clipboard","clipboard_copied_text":"System info copied","clipboard_fail_text":"Press \"Cmd + C\" to copy"};/* ]]> */ </script><link rel="stylesheet" id="vsrp_css-css" href="./sjce_files/vertical-scroll-recent-post.css" type="text/css" media="all">
+<link rel="stylesheet" id="su-icons-css" href="./sjce_files/icons.css" type="text/css" media="all">
+<link rel="stylesheet" id="su-shortcodes-css" href="./sjce_files/shortcodes.css" type="text/css" media="all">
+<script type="text/javascript" src="./sjce_files/bootstrap.js.download"></script>
+<script type="text/javascript" src="./sjce_files/accordion.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"1042b50a48","is_admin":"","is_mobile":"","ajaxurl":"https:\/\/sjce.ac.in\/wp-admin\/admin-ajax.php","lang":"","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
+var PT_CV_PAGINATION = {"first":"\u00ab","prev":"\u2039","next":"\u203a","last":"\u00bb","goto_first":"Go to first page","goto_prev":"Go to previous page","goto_next":"Go to next page","goto_last":"Go to last page","current_page":"Current page is","goto_page":"Go to page"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./sjce_files/cv.js.download"></script>
+<script type="text/javascript" src="./sjce_files/core.min.js.download"></script>
+<script src="./sjce_files/underscore-before.js.download"></script>
+<script type="text/javascript" src="./sjce_files/underscore.min.js.download"></script>
+<script src="./sjce_files/underscore-after.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./sjce_files/wp-util.js.download"></script>
+<script type="text/javascript" src="./sjce_files/backbone.min.js.download"></script>
+<script type="text/javascript" src="./sjce_files/jquery.plugin.min.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPEMS = {"gmt_offset":"5.5","current_time":"Jan 23, 2024 10:27:00 +0000","l18n":{"labels":["Years","Months","Weeks","Days","Hours","Minutes","Seconds"],"labels1":["Year","Month","Week","Day","Hour","Minute","Second"]},"ajaxurl":"https:\/\/sjce.ac.in\/wp-admin\/admin-ajax.php","something_wrong":"Something went wrong","register_button":"fd9af55cd3"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./sjce_files/jquery.countdown.min.js.download"></script>
+<script type="text/javascript" src="./sjce_files/owl.carousel.min.js.download"></script>
+<script type="text/javascript" src="./sjce_files/jquery.magnific-popup.min.js.download"></script>
+<script type="text/javascript" src="./sjce_files/events.min.js.download"></script>
+<script type="text/javascript" src="./sjce_files/widget.min.js.download"></script>
+<script type="text/javascript" src="./sjce_files/mouse.min.js.download"></script>
+<script type="text/javascript" src="./sjce_files/resizable.min.js.download"></script>
+<script type="text/javascript" src="./sjce_files/draggable.min.js.download"></script>
+<script type="text/javascript" src="./sjce_files/button.min.js.download"></script>
+<script type="text/javascript" src="./sjce_files/position.min.js.download"></script>
+<script type="text/javascript" src="./sjce_files/dialog.min.js.download"></script>
+<script type="text/javascript" src="./sjce_files/datepicker.min.js.download"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type="text/javascript" src="./sjce_files/jquery-ui.timepicker.js.download"></script>
+<script type="text/javascript" src="./sjce_files/tabs.min.js.download"></script>
+<script type="text/javascript" src="./sjce_files/accordion.min.js.download"></script>
+<script type="text/javascript" src="./sjce_files/jquery.flexslider.js.download"></script>
+<script type="text/javascript" src="./sjce_files/jquery.selectbox.js.download"></script>
+<script type="text/javascript" src="./sjce_files/jquery.ticker.js.download"></script>
+<script type="text/javascript" src="./sjce_files/jquery.hover_intent.js.download"></script>
+<script type="text/javascript" src="./sjce_files/jquery.superfish.js.download"></script>
+<script type="text/javascript" src="./sjce_files/jquery.lightbox.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var vz_vj_settings = {"ajaxurl":"https:\/\/sjce.ac.in\/wp-admin\/admin-ajax.php","wpe_dir":"https:\/\/sjce.ac.in\/wp-content\/themes\/WP-EDU","ajaxaction":"vz_frontajax","next_slide_sec":"7000"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./sjce_files/wp_education.js.download"></script>
+<script type="text/javascript" src="./sjce_files/wp-embed.js.download"></script>
+<script type="text/javascript" src="./sjce_files/vertical-scroll-recent-post.js.download"></script>
+<script type="text/javascript" src="./sjce_files/moment.js.download"></script>
+<script type="text/javascript" src="./sjce_files/moment-timezone-all-years.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var su_other_shortcodes = {"no_preview":"This shortcode doesn't work in live preview. Please insert it into editor and preview on the site."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./sjce_files/other-shortcodes.js.download"></script>
+
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="https://sjce.ac.in/"><div class="lb-nav"><a class="lb-prev" href="https://sjce.ac.in/"></a><a class="lb-next" href="https://sjce.ac.in/"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div><div id="onesignal-bell-container" class="onesignal-bell-container onesignal-reset onesignal-bell-container-bottom-left"><div id="onesignal-bell-launcher" class="onesignal-bell-launcher onesignal-bell-launcher-md onesignal-bell-launcher-bottom-left onesignal-bell-launcher-theme-default onesignal-bell-launcher-active"><div class="onesignal-bell-launcher-button"><svg class="onesignal-bell-svg" xmlns="http://www.w3.org/2000/svg" width="99.7" height="99.7" viewBox="0 0 99.7 99.7" style="filter: drop-shadow(0 2px 4px rgba(34,36,38,0.35));; -webkit-filter: drop-shadow(0 2px 4px rgba(34,36,38,0.35));;"><circle class="background" cx="49.9" cy="49.9" r="49.9" style=""></circle><path class="foreground" d="M50.1 66.2H27.7s-2-.2-2-2.1c0-1.9 1.7-2 1.7-2s6.7-3.2 6.7-5.5S33 52.7 33 43.3s6-16.6 13.2-16.6c0 0 1-2.4 3.9-2.4 2.8 0 3.8 2.4 3.8 2.4 7.2 0 13.2 7.2 13.2 16.6s-1 11-1 13.3c0 2.3 6.7 5.5 6.7 5.5s1.7.1 1.7 2c0 1.8-2.1 2.1-2.1 2.1H50.1zm-7.2 2.3h14.5s-1 6.3-7.2 6.3-7.3-6.3-7.3-6.3z" style=""></path><ellipse class="stroke" cx="49.9" cy="49.9" rx="37.4" ry="36.9" style=""></ellipse></svg></div><div class="onesignal-bell-launcher-badge" style="filter: drop-shadow(0 2px 4px rgba(34,36,38,0));; -webkit-filter: drop-shadow(0 2px 4px rgba(34,36,38,0));;"></div><div class="onesignal-bell-launcher-message"><div class="onesignal-bell-launcher-message-body"></div></div><div class="onesignal-bell-launcher-dialog" style="filter: drop-shadow(0px 2px 2px rgba(34,36,38,.15));; -webkit-filter: drop-shadow(0px 2px 2px rgba(34,36,38,.15));;"><div class="onesignal-bell-launcher-dialog-body"></div></div></div></div></body></html>
